@@ -6,12 +6,15 @@ import sys
 
 from animals import cat
 from animals import dog
+from animals import lion
 from animals import sheep
 import animal
 import farm
 
 def make_animal(kind):
     """Create an animal class."""
+    if kind == 'lion':
+        return lion.Lion()
     if kind == 'cat':
         return cat.Cat()
     if kind == 'dog':
